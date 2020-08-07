@@ -1,84 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			img{
-				max-width:1%;
-				height:auto;
-			body {
-				background-color:beige; 
-			      	font-family:verdana}
-			
-			h1 {
-				color:0x000033; 
-				font-size:40px; 
-				text-align:center; 
-				border:2px solid black; 
-				padding: 15px; 
-				font-family:verdana}
-			
-			p {font-family:verdana;}
-			
-			section {
-  				display: -webkit-flex;
- 				display: flex;
-				}
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+ body,h1,h2,h3,h4,h5 {font-family: "Poppins", verdana}
+ body {font-size:16px;background-color:white}
+ .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+ .w3-half img:hover{opacity:1}
+</style>
+	
+<body>
 
-			nav {
-				-webkit-flex: 1;
- 				-ms-flex: 1;
-  				flex: 1;
-  				background: #ccc;
-  				padding: 20px;
-				}
 
-			nav ul {
- 				 list-style-type: none;
- 				 padding: 0;
-				}
-		
-			@media  only screen and (max-width:620px) {
-				  .menu, .main, .right {
-				  	width: 100%;
-				  	height: auto;
-				  	}
-				}
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color:brown;background-color:green" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Test dinosauriano oficial</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-navy">Inicio</a> 
+    <a href="#AI" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-navy">AI info.</a> 
+    <a href="#Tests" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-navy">Test</a> 
+    <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-navy">Contactenos</a>
+  </div>
+</nav>
 
-		</style>
-	</head>
-	<body>
-		<header>
-  			<h1>Descubre qué galleta Dinosaurus eres</h1>
-		</header>
-		<section class="left">
- 			 <nav>
-    				<ul>
-     					<li><a href="blog/oso">Oso</a></li>
-      					<li><a href="blog/Trex">T Rex</a></li>
-      					<li><a href="blog/triceratops">Triceratops</a></li>
-					<li><a href="blog/oveja">Oveja</a></li>
-					<li><a href="blog/">dino</a></li>
-					<li><a href="blog/">dino</a></li>
-   				</ul>
- 			 </nav>
-		
-		<p>Con este rápido test podrás descubrir (al fin!) qué galleta 
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Test dinosauriano oficial</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo" style="color:0x000033;font-size:40px;text-align:center;border:2px solid black;padding:15px;background-color:beige;"><b>Test dinosauriano</b></h1>
+    <h1 class="w3-xxxlarge w3-text-yellow"><b>Descubre qué galleta Dinosaurus eres</b></h1>
+    <p><b>Con este rápido test podrás descubrir (al fin!) qué galleta 
 		Dinosaurus eres. Tan solo responde a una serie de preguntas 
 		necesarias para que nuestra AI determine mediante Machine Learning
-		el dinosaurio que más se te asemeja.</p>
-		
-		<button style="padding: 0px;" onclick="test.html o como sea que se referencia a otro html" title="Comencemos!">Comencemos su evaluacion dinosauriana </button>
-		
-		<img src="ososurgical.png" style="width:100%;" alt="oso"> 
-		<img src="trexmascarilla (1).png" style="width:100%;" alt="Trex">
-		<img src="triceratopssurgical.png" style="width:100%;" alt="triceratops"> 
-		</br>
-		<img src="dinosaurus_galletas-H--620x349@abc.jpg" style="width:100%;" alt="don dinosaurio">
-		<img src="dinosaurus_galletas-kfo620x349@abc.jpg" style="width:100%;" alt="don dinosaurio"> 
-		<img src="dinosaurus_galletas-kfoH0x349@abc.jpg" style="width:100%;" alt="don dinosaurio">
+		el dinosaurio que más se te asemeja.</b></p>
+    <hr style="width:50px;border:5px beige" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Oso">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Trex">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="Oveja">
+    </div>
 
-		<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">Buenas tardes caballer@ y disculpe las molestias, me encuentro esclavizado por unos magnates en un campo de concentracion en vietnam, seria uste tan amable de informar a las autoridades sobre mi situacion?</div>
-		
-	</body>
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="AI" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Como nuestro AI determina usando machine learning con exactitud su personalidad dinosauriana</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>explicacion del AI etc</p>
+  </div>
+  
+  <div class="w3-container" id="Tests" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Tipo de test</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Test Nivel Lagartija</li>
+        <li class="w3-padding-16">AI Basico</li>
+        <li class="w3-padding-16">comparte con tu pandilla</li>
+        <li class="w3-padding-16">recibe un email personalizado</li>
+        <li class="w3-padding-16">Presume de tu personalidad dinosauriana a todos tus panas</li>
+        <li class="w3-padding-16">
+          <h2>0$</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Comenzar Test</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Test Nivel T Rex Chetao</li>
+        <li class="w3-padding-16">AI completo 100% de acierto</li>
+        <li class="w3-padding-16">Comparte con tu pandilla y con tu familia</li>
+        <li class="w3-padding-16">recibe dos emails personalizados</li>
+        <li class="w3-padding-16">Presume de tu personalidad dinosauriana a todos tus pan@s</li>
+        <li class="w3-padding-16">
+          <h2>0$</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Comenzar test</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact0" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contactenos</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nombre</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensaje</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar</button>
+    </form>  
+  </div>
+
+</div>
+
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;margin-left:300px;padding-right:58px"><p class="w3-right">Buenas tardes caballer@ y disculpe las molestias, me encuentro esclavizado por unos malhechores en un campo de concentracion en vietnam, seria uste tan amable de informar a las autoridades sobre mi situacion? </p></div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
 </html>
