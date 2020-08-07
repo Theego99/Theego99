@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<style>
+			body {background-color:beige; font-family:verdana}
+			h1 {color:0x000033; font-size:40px; text-align:center; border: 2px solid black; padding: 15px; font-family:verdana}
+			p {font-family:verdana;}
+			section {
+  				display: -webkit-flex;
+ 				display: flex;
+				}
+
+			nav {
+				-webkit-flex: 1;
+ 				-ms-flex: 1;
+  				flex: 1;
+  				background: #ccc;
+  				padding: 20px;
+				}
+
+			nav ul {
+ 				 list-style-type: none;
+ 				 padding: 0;
+				}
+
+			footer {
+				  background-color: #777;
+				  padding: 10px;
+				  text-align: center;
+				  color: white;
+				}
+
+
+			@media (max-width: 600px) {
+				  nav, article {
+				  width: 100%;
+				  height: auto;
+				  }
+				}
+
+		</style>
+	</head>
+  <body>
+    <article>
+      <header>
+   			<h1 style="">Eres el que parece una oveja</h1>
+		  </header>
+      <img src="ososurgical.png" width="300" alt="oveja">
+      <p>De pequenno te mordio un perro y ahora les tienes fobia. </b>
+      Eres muy realista, quiza demasiado. Intenta mostrar mas tus</b>
+      sentimientos hacia otras personas. Te la pela lo que viene siendo todo</b>
+      y solo quieres que te dejen en paz. Te haces pocas pajas y </b>
+      cada vez las disfrutas menos.
+      </p>
+    </article>
+  </body>
+</html>
