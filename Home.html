@@ -5,10 +5,49 @@
 			body {background-color:beige; font-family:verdana}
 			h1 {color:0x000033; font-size:40px; text-align:center; font-family:verdana}
 			p {font-family:verdana;}
+			section {
+  				display: -webkit-flex;
+ 				display: flex;
+				}
+
+				/* Style the navigation menu */
+			nav {
+				-webkit-flex: 1;
+ 				-ms-flex: 1;
+  				flex: 1;
+  				background: #ccc;
+  				padding: 20px;
+				}
+
+
+			nav ul {
+ 				 list-style-type: none;
+ 				 padding: 0;
+				}
+			@media (max-width: 600px) {
+ 				section {
+    				-webkit-flex-direction: column;
+    				flex-direction: column;
+  					}
+				}
+
 		</style>
 	</head>
 	<body>
-		<h1 style="border: 2px solid black; padding: 15px;">Descubre qué galleta Dinosaurus eres</h1>
+		<header>
+  			<h1 style="border: 2px solid black; padding: 15px;">Descubre qué galleta Dinosaurus eres</h1>
+		</header>
+		<section>
+ 			 <nav>
+    				<ul>
+     					<li><a href="blog/oso">Oso</a></li>
+      					<li><a href="blog/Trex">T Rex</a></li>
+      					<li><a href="blog/triceratops">Triceratops</a></li>
+					<li><a href="blog/oveja">Oveja</a></li>
+					<li><a href="blog/">dino</a></li>
+					<li><a href="blog/">dino</a></li>
+   				</ul>
+ 			 </nav>
 		
 		<p>Con este rápido test podrás descubrir (al fin!) qué galleta </b>
 		Dinosaurus eres. Tan solo responde a una serie de preguntas </b> 
