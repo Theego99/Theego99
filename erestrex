@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<style>
+			body {background-color:beige; font-family:verdana}
+			h1 {color:0x000033; font-size:40px; text-align:center; border: 2px solid black; padding: 15px; font-family:verdana}
+			p {font-family:verdana;}
+			section {
+  				display: -webkit-flex;
+ 				display: flex;
+				}
+
+			nav {
+				-webkit-flex: 1;
+ 				-ms-flex: 1;
+  				flex: 1;
+  				background: #ccc;
+  				padding: 20px;
+				}
+
+			nav ul {
+ 				 list-style-type: none;
+ 				 padding: 0;
+				}
+			
+			footer {
+				  background-color: #777;
+				  padding: 10px;
+				  text-align: center;
+				  color: white;
+				}
+
+
+			@media (max-width: 600px) {
+				  nav, article {
+				  width: 100%;
+				  height: auto;
+				  }
+				}
+
+		</style>
+	</head>
+  <body>
+    <article>
+      <header>
+   			<h1 style="">Eres el T-Rex</h1>
+		  </header>
+      <img src="trexmascarilla (1).png" width="380" alt="Trex">
+      <p>Estas mamaisimo hijueputa. Tienes mentalidad de tiburón y eres tu propio jefe, </b>
+      aunque a los demas dinosaurios no les caes bien porque te los comes. </b>
+      Tienes cortos los brazos pero tremenda poronga/cueva br@. Tienes torticolis.
+      </p>
+    </article>
+  </body>
+</html>
