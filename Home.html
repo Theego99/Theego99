@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <!-- Rellenar texto en algunos sitios -->
-<!-- No se muy bien como pero la indentacion me ha petado y la mayoria esta en espacios, si la podeis cambiar a tab mejor que ya me da pereza-->
 <html lang="es">
 <title>Home</title>
 <meta charset="UTF-8">
@@ -8,18 +7,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
- body,h1,h2,h3,h4,h5 {font-family: "Poppins", verdana}
- body {font-size:16px;background-color:white;}
- .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
- .w3-half img:hover{opacity:1}
- li {
-   list-style-type: none;
- }
+	a:hover,a:active{background-color:black}
+	 body,h1,h2,h3,h4,h5 {font-family: "Poppins", verdana}
+	 body {font-size:16px;background-color:white;}
+	.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+	.w3-half img:hover{opacity:1}
+	li {
+		list-style-type: none;
+	}
 </style>
-	<!-- la foto de fondo no me parece que este mal pero haced algunos retoques enplan color del texto y vainas asi, o editar la foto si quereis yo k ce -->
+	<!-- No se muy bien como pero la indentacion me ha petado y la mayoria esta en espacios, si la podeis cambiar a tab mejor que ya me da pereza-->
+	<!-- la foto de fondo no me parece que este mal pero haced algunos retoques en plan color del texto y vainas asi, o editar la foto si quereis yo k ce -->
 <body style="background-image:url(fondomesozoico.png); background-repeat: no-repeat;background-attachment:fixed;background-size:cover;">
 
-
+<!-- menu que esta a la izq -->
 <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color:white;background-color:#8B4513" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;background-color:#CD853F">Cerrar menu</a>
   <div class="w3-container">
@@ -33,6 +34,7 @@
   </div>
 </nav>
 
+	<!-- para abrir el side menu, solo aparece cuando se accede con el movil o si aumentas mazo -->
 <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#CD853F">
   <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()" style="border-radius:20px;background-color:#8B4513">☰</a>
   <span style="background-color:#CD853F">Test dinosauriano oficial</span>
@@ -42,6 +44,7 @@
 
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+	<!-- titulo de la pagina, lo que aparece mas arriba -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo" style="color:0x000033;font-size:40px;text-align:center;border:2px solid black;padding:15px;background-color:beige;border-radius:25px;"><b>Test dinosauriano</b></h1>
     <h1 class="w3-xxxlarge w3-text-brown"><b>Descubre qué galleta Dinosaurus eres</b></h1>
@@ -59,6 +62,7 @@
         	</a>
 	</li>
 	
+	<!-- fotos de las seis galletas -->
 	<!-- Ni zorra de como se hace  ↓　pero que las fotos esten ordenadas mas guay en plan mas juntas o algo -->
   <div class="w3-row-padding">
     <div class="w3-half">
@@ -92,12 +96,14 @@
     </div>
   </div>
 
+	<!-- paria de como funciona el AI xd -->
   <div class="w3-container" id="AI" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Como funciona nuestro AI</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>explicacion del AI etc</p>
   </div>
   
+	<!-- comparar las dos opciones de test -->
   <div class="w3-container" id="Tests" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Tipos de test</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
@@ -139,7 +145,7 @@
     </div>
   </div>
   
-  <!-- Contact -->
+  <!-- Contacto -->
   <div class="w3-container" id="contacto" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contactenos</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
@@ -156,15 +162,19 @@
         <label>Mensaje</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar</button>
+	    <!-- hay que hacer que cuando mandes la informacion se guarde correctamente en el servidor -->
+     <a>
+	     <button type="submit" onclick="alert('Hemos recibido correctamente su informacion')"　class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar</button>
+     </a>
     </form>  
   </div>
 
 </div>
 
-
+<!-- footer -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;margin-left:300px;padding-right:58px"><p class="w3-right">Buenas tardes caballer@ y disculpe las molestias, me encuentro esclavizado por unos malhechores en un campo de concentracion en vietnam, seria usted tan amable de informar a las autoridades sobre mi situacion? Gracias por su atencion</p></div>
 
+	<!--javascript -->
 <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
